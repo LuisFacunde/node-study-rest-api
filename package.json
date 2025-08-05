@@ -13,9 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/LuisFacunde/node-study-rest-api/issues"
   },
-  "homepage": "https://github.com/LuisFacunde/node-study-rest-api#readme"
+  "homepage": "https://github.com/LuisFacunde/node-study-rest-api#readme",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
 }

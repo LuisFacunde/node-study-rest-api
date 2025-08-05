@@ -1,0 +1,18 @@
+# Pasta de dependências do Node.js
+node_modules/
+
+# Arquivos gerados pelo TypeScript
+*.js
+*.js.map
+*.d.ts
+
+# Pasta de saída da compilação (se você a configurar)
+dist/
+build/
+
+# Variáveis de ambiente
+.env
+
+# Arquivos de log e cache
+npm-debug.log*
+.DS_Store
