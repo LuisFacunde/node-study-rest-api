@@ -1,13 +1,15 @@
-// Definit um tipo para cada informação, principalmente em parâmetros de funções
-interface User {
-  birthYear: number 
-  // birthYear?: number -> Torna o parâmetro obrigatório
-}
+import fastify from "fastify";
 
-function calculateAgeOfUser(user: User) {
-  return new Date().getFullYear() - user.birthYear;
-}
+const app = fastify();
 
-calculateAgeOfUser({
-  birthYear: 2001
-})
+app.get("/hello", () => {
+  return "Hello World!";
+});
+
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
+    console.log("HTTP Server Running!");
+  });
