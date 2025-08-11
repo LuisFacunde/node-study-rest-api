@@ -1,9 +1,12 @@
 import fastify from 'fastify'
+import { knexConfig } from './database.js'
 
 const app = fastify()
 
-app.get('/hello', () => {
-  return 'Hello World!'
+app.get('/hello', async () => {
+  const table = await knexConfig('sqlite_schema').select('*')
+
+  return table
 })
 
 app
@@ -13,3 +16,5 @@ app
   .then(() => {
     console.log('HTTP Server Running!')
   })
+
+// http://localhost:3333/hello - visualizar conteúdo da porta

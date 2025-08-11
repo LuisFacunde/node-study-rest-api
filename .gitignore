@@ -1,3 +1,6 @@
+# arquivos de banco de dados
+temp/app.db
+
 # Pasta de dependências do Node.js
 node_modules/
 
